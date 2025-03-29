@@ -1,0 +1,143 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #003366;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 36px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-img img {
+    width: 300px;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero-img img:hover {
+    transform: scale(1.1);
+}
+
+
+.about {
+    text-align: center;
+    padding: 50px;
+    background: white;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.about-content img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+
+.clients {
+    text-align: center;
+    padding: 50px;
+}
+
+.client-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.client-logos img {
+    width: 100px;
+}
+
+
+.testimonials {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 50px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: auto;
+    font-size: 18px;
+}
+
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
